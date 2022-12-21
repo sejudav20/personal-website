@@ -11,11 +11,11 @@ import TitleBar from './TitleBar';
 
 function App() {
   return (
-
-    <div id="scrollable" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="10">
+    
+    <div >
       <TitleBar></TitleBar>
       <NavBar></NavBar>
-      <div   >
+      <div  id="scrollable"  data-spy="scroll" data-target=".navbar" data-offset="50" >
       <div id="bio" ><CardContainer title="Bio" body={<>Hello World</>}></CardContainer></div>
       <div id="skills" ><CardContainer  title="Skills" body={<>Hello World</>}></CardContainer></div>
       <div id="work" ><CardContainer  title="Work Experience" body={<>Hello World</>}></CardContainer></div>

@@ -1,5 +1,16 @@
 .App {
   text-align: center;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+:target:before {
+  content: "";
+  display: block;
+  height: 20px;
+  margin: -20px 0 0;
+}
+
 
 
