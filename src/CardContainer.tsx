@@ -7,9 +7,9 @@ interface CardProps {
 
 // basic container with a header
 function CardContainer({ title, body }: CardProps) {
-    return <div className="card mt-5 p-5 shadow-sm">
+    return <div className="container"><div className="card mt-5 shadow-sm">
         <div className="card-header text-center">{title}</div>
-        <div className="card-body">{body}</div>
+        <div className="card-body">{body}</div></div>
     </div>;
 }
 export default CardContainer;

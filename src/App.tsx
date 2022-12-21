@@ -15,6 +15,10 @@ function App() {
       <TitleBar></TitleBar>
       <NavBar></NavBar>
       <CardContainer title="Bio" body={<>Hello World</>}></CardContainer>
+      <CardContainer title="Skills" body={<>Hello World</>}></CardContainer>
+      <CardContainer title="Work Experience" body={<>Hello World</>}></CardContainer>
+      <CardContainer title="Classes" body={<>Hello World</>}></CardContainer>
+      <CardContainer title="Extracuriculars" body={<>Hello World</>}></CardContainer>
       <ContactBar></ContactBar>
     </>
   );
