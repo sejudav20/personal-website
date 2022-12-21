@@ -1,3 +1,4 @@
+
 import React from 'react';
 
 
@@ -11,16 +12,22 @@ import TitleBar from './TitleBar';
 function App() {
   return (
 
-    <>
+    <div id="scrollable" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="10">
       <TitleBar></TitleBar>
       <NavBar></NavBar>
-      <CardContainer title="Bio" body={<>Hello World</>}></CardContainer>
-      <CardContainer title="Skills" body={<>Hello World</>}></CardContainer>
-      <CardContainer title="Work Experience" body={<>Hello World</>}></CardContainer>
-      <CardContainer title="Classes" body={<>Hello World</>}></CardContainer>
-      <CardContainer title="Extracuriculars" body={<>Hello World</>}></CardContainer>
-      <ContactBar></ContactBar>
-    </>
+      <div   >
+      <div id="bio" ><CardContainer title="Bio" body={<>Hello World</>}></CardContainer></div>
+      <div id="skills" ><CardContainer  title="Skills" body={<>Hello World</>}></CardContainer></div>
+      <div id="work" ><CardContainer  title="Work Experience" body={<>Hello World</>}></CardContainer></div>
+      <div id="classes" ><CardContainer  title="Classes" body={<>Hello World</>}></CardContainer></div>
+      <div id="project" ><CardContainer  title="Projects" body={<>Hello World</>}></CardContainer></div>
+      <div id="fun" ><CardContainer title="Extracuriculars" body={<>Hello World</>}></CardContainer></div>
+      <div id="contact" ><ContactBar></ContactBar></div>
+      </div>
+    </div>
+ 
+  
+   
   );
 }
 

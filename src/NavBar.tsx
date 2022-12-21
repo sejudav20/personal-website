@@ -2,29 +2,29 @@ import React from 'react';
 
 
 function NavBar() {
-    return <nav className="navbar navbar-expand-sm shadow-sm navbar-dark bg-dark text-white sticky-top">
+    return <nav id="navi" className="navbar navbar-expand-sm shadow-sm navbar-dark bg-dark text-white sticky-top">
         <div className="container-fluid d-flex justify-content-start">
             <ul className="navbar-nav">
                 <li className="nav-item">
-                    <a className="nav-link" href="#">Bio</a>
+                    <a className="nav-link" href="#bio">Bio</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#">Skills</a>
+                    <a className="nav-link" href="#skills">Skills</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#">Work</a>
+                    <a className="nav-link" href="#work">Work</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#">Classes</a>
+                    <a className="nav-link" href="#classes">Classes</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#">Projects</a>
+                    <a className="nav-link" href="#project">Projects</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#">Fun</a>
+                    <a className="nav-link" href="#fun">Fun</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#">Contact</a>
+                    <a className="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
