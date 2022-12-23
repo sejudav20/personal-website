@@ -2,7 +2,7 @@ import React from 'react';
 
 
 function TitleBar() {
-    return <nav className="navbar shadow-lg navbar-expand-sm navbar-dark bg-dark border-bottom border-light">
+    return <nav className="navbar shadow-lg navbar-expand-sm navbar-dark bg-dark ">
         <div className="container-fluid d-flex justify-content-between p-5">
             <span className="navbar-text h3 text-white">Davin Seju</span>
             <ul className="navbar-nav">

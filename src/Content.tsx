@@ -116,7 +116,7 @@ export function Work() {
 export function Classes() {
     return (
         <>  <p>Classes I have taken at the University of Washington</p>
-            <div className="row p-5">
+            <div className="row ">
                 <div className="col">
                     {ClassCard("CSE 331 Software Design and Implementation", "Explores designing and programming in higher level languages. Focuses on proving code correctness and testing.")}
                 </div>
@@ -143,7 +143,7 @@ export function Classes() {
 }
 function ClassCard(title: String, text: String) {
     return (<>
-        <div className="card shadow-sm h-100 p-3 rounded">
+        <div className="card shadow-sm h-100 p-3 mt-4 rounded">
             <div className="card-body">
                 <h6 className="card-title">{title}</h6>
                 <p className="card-text">{text}</p>
@@ -153,11 +153,38 @@ function ClassCard(title: String, text: String) {
 }
 export function Projects() {
     return (
-        <></>
+        <><ProjectCard iconPath="./news_hawk.png" title="News Hawk" details="An android app created using Flutter that utilizes a 
+        REST API created with Spring Boot. The app allows users to create multimedia news articles and explore other people's work as well.
+        The app extensively uses AWS services such as Elastic Beanstalk to host the backend and DynamoDB to store user data." />
+            <ProjectCard iconPath="./music-note-beamed.svg" title="Music Key Recognition" details="A simple web application that recognizes the musical key 
+            of a song. The website allows users to submit tunes through spotify urls, files and recording. It was created with Python using
+            Django. The website uses a neural network I trained using 20,000 spotify songs compiled with the Spotify API to recognize the key" />
+            <ProjectCard iconPath="./geo-alt.svg" title="Campus Paths" details="A website created for a school project that utilizes backend spark Java server
+            and a front end made with React and TypeScript. The website allows users to select buildings around University of Washington campus and finds the shortest path
+            between them using Dijkstra's algorithm." />
+            <ProjectCard iconPath="./camera.svg" title="Memer" details=" A simple Android App that uses a convolutional neural network I trained on hundreds of images
+            to detect if an image could be a considered an internet meme." /></>
     )
 }
-export function Fun() {
-    return (
-        <></>
-    )
+interface ProjectProp {
+    iconPath: string
+    title: string
+    details: string
 }
+function ProjectCard({ iconPath, title, details }: ProjectProp) {
+    return (<>
+        <div className="card">
+            <div className="row">
+                <div className="col-sm-2 border-end d-flex justify-content-center">
+                    <center><img src={iconPath} alt="App icon" width="80" height="80" /></center>
+
+                </div>
+                <div className="col-sm-10 d-flex flex-column justify-content-start">
+                    <div className="h5">{title}</div>
+                    <p>{details}</p>
+                </div>
+            </div>
+        </div>
+    </>)
+}
+

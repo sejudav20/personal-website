@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Bio, Skills, Work, Classes, Projects, Fun } from './Content'
+import { Bio, Skills, Work, Classes, Projects } from './Content'
 
 import './App.css';
 import CardContainer from './CardContainer';
@@ -21,7 +21,6 @@ function App() {
         <div id="work" ><CardContainer title="Work Experience" body={<>{Work()}</>}></CardContainer></div>
         <div id="classes" ><CardContainer title="Classes" body={<>{Classes()}</>}></CardContainer></div>
         <div id="project" ><CardContainer title="Projects" body={<>{Projects()}</>}></CardContainer></div>
-        <div id="fun" ><CardContainer title="Extracuriculars" body={<>{Fun()}</>}></CardContainer></div>
         <div id="contact" ><ContactBar></ContactBar></div>
       </div>
     </div>

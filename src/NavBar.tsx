@@ -2,7 +2,7 @@ import React from 'react';
 
 
 function NavBar() {
-    return <nav id="navi" className="navbar navbar-expand-sm shadow-sm navbar-dark bg-dark text-white sticky-top">
+    return <nav id="navi" className="navbar navbar-expand-sm shadow-sm navbar-custom navbar-dark text-white sticky-top">
         <div className="container-fluid d-flex justify-content-start">
             <ul className="navbar-nav">
                 <li className="nav-item">
@@ -20,9 +20,7 @@ function NavBar() {
                 <li className="nav-item">
                     <a className="nav-link" href="#project">Projects</a>
                 </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="#fun">Fun</a>
-                </li>
+                
                 <li className="nav-item">
                     <a className="nav-link" href="#contact">Contact</a>
                 </li>

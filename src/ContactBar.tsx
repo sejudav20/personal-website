@@ -5,7 +5,7 @@ interface ContactBarProp{
     id?:string;
 }
 function ContactBar({id}: ContactBarProp) {
-    return (<div id={id} className="mt-5 p-4 bg-dark text-white shadow-sm">
+    return (<div id={id} className="mt-5 p-4  text-white navbar-custom shadow-sm">
         <center><h4>Contact</h4></center>
         <h5>Email:</h5>
         <a className="btn btn-link mb-2" href='mailto:davinseju@gmail.com'>davinseju@gmail.com</a>
