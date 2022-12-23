@@ -7,12 +7,15 @@ export function Bio() {
                 <div className="col d-flex justify-content-center">
                     <img src={"./profile.jpg"} alt="Davin Seju profile" width="300" height="300"></img>
                 </div>
-                <div className="col-sm p-3 d-flex justify-content-start" >
+                <div className="col p-4 d-flex flex-column justify-content-center align-items-center" >
                     <p className="lead">I am an undergraduate student in my third year in the University of Washington in Seattle.
                         I am a double major studying both Computer Science and Applied Math. I have lived in the Seattle area for
                         10 years and  I am an avid learner and I am constantly
                         looking for new opportunities to gain skills and experience in software development
                     </p>
+                    <img className="mx-auto d-block" src="https://uw-s3-cdn.s3.us-west-2.amazonaws.com/wp-content/uploads/sites/98/2014/09/07214443/Signature_Center_Purple_Hex.png"
+                    width="500" height="100" alt="UW logo"></img>
+                    
                 </div>
 
             </div>
@@ -179,7 +182,7 @@ function ProjectCard({ iconPath, title, details }: ProjectProp) {
                     <center><img src={iconPath} alt="App icon" width="80" height="80" /></center>
 
                 </div>
-                <div className="col-sm-10 d-flex flex-column justify-content-start">
+                <div className="col-sm-10 d-flex flex-column justify-content-start  ">
                     <div className="h5">{title}</div>
                     <p>{details}</p>
                 </div>

@@ -1,10 +1,9 @@
 // change the theme
-$theme-colors: (
-  primary: darkblue,
-  secondary: rgb(191, 185, 185),
-   dark: #cc1b1b
-);
-$dark:#cc1b1b;
+
+$primary: rgb(7, 7, 133);
+$secondary: rgb(176, 221, 249);
+
+
 
 // Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap.scss';
