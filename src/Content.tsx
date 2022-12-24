@@ -23,7 +23,14 @@ export function Bio() {
         </>
     )
 }
-
+export function Resume(){
+    return (<a className="d-flex justify-content-center" href="./Davin-Seju-Resume.pdf">
+        <div id="download-card" className="card rounded"> 
+        <img src="./resume-thumbnail.jpg" className="card-img-top" height="250" alt="resume thumbnail" />
+        <div className="card-body rounded-bottom text-bg-dark text-center"><h6><i className="bi bi-download me-2"></i>Download</h6></div>
+        </div>       
+    </a>);
+}
 
 export function Skills() {
     return (

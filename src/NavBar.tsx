@@ -9,6 +9,9 @@ function NavBar() {
                     <a className="nav-link" href="#bio">Bio</a>
                 </li>
                 <li className="nav-item">
+                    <a className="nav-link" href="#resume">Resume</a>
+                </li>
+                <li className="nav-item">
                     <a className="nav-link" href="#skills">Skills</a>
                 </li>
                 <li className="nav-item">
