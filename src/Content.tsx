@@ -9,14 +9,14 @@ export function Bio() {
                 </div>
                 <div className="col p-4 d-flex flex-column justify-content-center align-items-center" >
                     <p className="lead">I am an undergraduate student in my third year at the University of Washington in Seattle.
-                        I have lived in the Seattle area for 
+                        I have lived in the Seattle area for
                         ten years and I am currently pursuing a Bachelor of Science in both Computer Science and Applied Mathematics
                         as a double major. I am an avid learner, and I am constantly
                         looking for new opportunities to gain skills and experience in software development.
                     </p>
                     <img className="mx-auto d-block" src="https://uw-s3-cdn.s3.us-west-2.amazonaws.com/wp-content/uploads/sites/98/2014/09/07214443/Signature_Center_Purple_Hex.png"
-                    width="500" height="100" alt="UW logo"></img>
-                    
+                        width="500" height="100" alt="UW logo"></img>
+
                 </div>
 
             </div>
@@ -24,14 +24,17 @@ export function Bio() {
         </>
     )
 }
-export function Resume(){
+
+// Resume section contains preview and download button
+export function Resume() {
     return (<a className="d-flex justify-content-center" href="./Davin-Seju-Resume.pdf">
-        <div id="download-card" className="card rounded"> 
-        <img src="./resume-thumbnail.jpg" className="card-img-top" height="250" alt="resume thumbnail" />
-        <div className="card-body rounded-bottom text-bg-dark text-center"><h6><i className="bi bi-download me-2"></i>Download</h6></div>
-        </div>       
+        <div id="download-card" className="card rounded">
+            <img src="./resume-thumbnail.jpg" className="card-img-top" height="250" alt="resume thumbnail" />
+            <div className="card-body rounded-bottom text-bg-dark text-center"><h6><i className="bi bi-download me-2"></i>Download</h6></div>
+        </div>
     </a>);
 }
+
 
 export function Skills() {
     return (
@@ -41,7 +44,7 @@ export function Skills() {
             <div id="accordion" className="accordion p-5">
 
                 <SkillItem id="collapseOne" title="Java and Python"
-                    body="I have experience coding in Java for 7 years and in Python for 4 years."/>
+                    body="I have experience coding in Java for 7 years and in Python for 4 years." />
 
                 <SkillItem id="collapseTwo" title="Several Programming Languages and Environments"
                     body="I am familiar with several IDEs including Visual Studio, IntelliJ Idea, and Jupyter
@@ -81,11 +84,15 @@ export function Skills() {
         </>
     )
 }
+
+
 interface SkillProps {
     id: string
     title: string
     body: string
 }
+
+// creates an accordian item that collapses and holds a string title and body
 function SkillItem({ id, title, body }: SkillProps) {
     return (<><div className="accordion-item">
         <div className="accordion-header" id={id + "_heading"}>
@@ -100,6 +107,7 @@ function SkillItem({ id, title, body }: SkillProps) {
         </div>
     </div></>);
 }
+
 
 export function Work() {
     return (
@@ -124,6 +132,8 @@ export function Work() {
         </div></>
     );
 }
+
+
 export function Classes() {
     return (
         <>  <p>Classes I have taken at the University of Washington</p>
@@ -152,6 +162,8 @@ export function Classes() {
         </>
     )
 }
+
+
 function ClassCard(title: String, text: String) {
     return (<>
         <div className="card shadow-sm h-100 p-3 mt-4 rounded">
@@ -162,6 +174,8 @@ function ClassCard(title: String, text: String) {
             </div>
         </div></>)
 }
+
+
 export function Projects() {
     return (
         <><ProjectCard iconPath="./news_hawk.png" title="News Hawk" details="An android app created using Flutter that utilizes a 
@@ -177,11 +191,15 @@ export function Projects() {
             to detect if an image could be a considered an internet meme." /></>
     )
 }
+
+
 interface ProjectProp {
     iconPath: string
     title: string
     details: string
 }
+
+
 function ProjectCard({ iconPath, title, details }: ProjectProp) {
     return (<>
         <div className="card">

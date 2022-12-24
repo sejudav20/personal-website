@@ -7,11 +7,11 @@ import CardContainer from './CardContainer';
 import ContactBar from './ContactBar';
 import NavBar from './NavBar';
 import TitleBar from './TitleBar';
-// Handles main page of the app and puts all components together
+
+// Handles main page of the app and puts all the components together
 
 function App() {
   return (
-
     <div >
       <TitleBar></TitleBar>
       <NavBar></NavBar>
@@ -25,9 +25,6 @@ function App() {
         <div id="contact" ><ContactBar></ContactBar></div>
       </div>
     </div>
-
-
-
   );
 }
 

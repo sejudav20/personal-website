@@ -1,6 +1,6 @@
 import React from 'react';
 
-
+// Navigation bar  that goes scrolls between all components 
 function NavBar() {
     return <nav id="navi" className="navbar navbar-expand-sm shadow-sm navbar-custom navbar-dark text-white sticky-top">
         <div className="container-fluid d-flex justify-content-start">
@@ -23,7 +23,7 @@ function NavBar() {
                 <li className="nav-item">
                     <a className="nav-link" href="#project">Projects</a>
                 </li>
-                
+
                 <li className="nav-item">
                     <a className="nav-link" href="#contact">Contact</a>
                 </li>

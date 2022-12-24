@@ -1,9 +1,11 @@
 .App {
   text-align: center;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 .navbar-custom {
   background-color: rgb(55, 55, 55);
 }
@@ -15,8 +17,6 @@ html {
   margin: -20px 0 0;
 }
 
-#download-card{
-  width:250px;
+#download-card {
+  width: 250px;
 }
-
-
