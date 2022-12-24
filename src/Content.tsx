@@ -8,10 +8,11 @@ export function Bio() {
                     <img src={"./profile.jpg"} alt="Davin Seju profile" width="300" height="300"></img>
                 </div>
                 <div className="col p-4 d-flex flex-column justify-content-center align-items-center" >
-                    <p className="lead">I am an undergraduate student in my third year in the University of Washington in Seattle.
-                        I am a double major studying both Computer Science and Applied Math. I have lived in the Seattle area for
-                        10 years and  I am an avid learner and I am constantly
-                        looking for new opportunities to gain skills and experience in software development
+                    <p className="lead">I am an undergraduate student in my third year at the University of Washington in Seattle.
+                        I have lived in the Seattle area for 
+                        ten years and I am currently pursuing a Bachelor of Science in both Computer Science and Applied Mathematics
+                        as a double major. I am an avid learner, and I am constantly
+                        looking for new opportunities to gain skills and experience in software development.
                     </p>
                     <img className="mx-auto d-block" src="https://uw-s3-cdn.s3.us-west-2.amazonaws.com/wp-content/uploads/sites/98/2014/09/07214443/Signature_Center_Purple_Hex.png"
                     width="500" height="100" alt="UW logo"></img>
@@ -40,8 +41,7 @@ export function Skills() {
             <div id="accordion" className="accordion p-5">
 
                 <SkillItem id="collapseOne" title="Java and Python"
-                    body="I have been coding in Java for school and outside projects for 7 years. I also have been
-                    coding in Python for 4 years."/>
+                    body="I have experience coding in Java for 7 years and in Python for 4 years."/>
 
                 <SkillItem id="collapseTwo" title="Several Programming Languages and Environments"
                     body="I am familiar with several IDEs including Visual Studio, IntelliJ Idea, and Jupyter
@@ -58,8 +58,8 @@ export function Skills() {
                     such as AWS and Azure."/>
                 <SkillItem id="collapseFive" title="Mobile Development and Multiplatform Applications"
                     body="I have been programming android applications for many years and I have published two applications
-                    to the app store. I have used both Jetpack Compose and Flutter. I have also had experience working
-                    with Kotlin Multiplatform and using Compose to create applications for desktop, web, and mobile."/>
+                    to the app store. I have used both Jetpack Compose and Flutter. I also have experience working
+                    with Kotlin Multiplatform to create applications for desktop, web, and mobile."/>
 
                 <SkillItem id="collapseSix" title="Data Science and Applied Mathematics"
                     body=" I am familiar with data science tools in Python such as Pandas, Matplotlib, and Scikit Learn. I
@@ -67,16 +67,16 @@ export function Skills() {
                     computing."/>
                 <SkillItem id="collapseSeven" title="Git and Github"
                     body="I have used Git repositories for several projects. I have experience with both
-                            Github and GitLab. I am familiar with the basic software develoment workflow including
+                            Github and GitLab. I am familiar with the basic software development workflow including
                             using and creating GitHub actions."/>
 
 
             </div>
             <p className="h4"> Other Skills: </p>
-            <ul className="list-group">
+            <ul className="list-group p-5">
                 <li className="list-group-item"> Working in teams </li>
-                <li className="list-group-item"> Preparing and Delivering Presentations</li>
-                <li className="list-group-item"> Willingness to Learn and Listen </li>
+                <li className="list-group-item"> Preparing and delivering presentations</li>
+                <li className="list-group-item"> Willingness to learn and listen </li>
             </ul>
         </>
     )
@@ -112,11 +112,12 @@ export function Work() {
                     alt="Seattle Skyline" width="250" height="150"></img>
             </div>
             <div className="col-sm p-3 d-flex justify-content-start" >
-                <p className="lead"> From June to August in 2022 I joined Vizio as an software engineer intern at their Seattle office.
-                    I joined the software team working on Vizio Account. I got experience working in an agile development
-                    environment and learned a lot from my team members. I got familiar working with the Kotlin Multiplatform
-                    framework, Postman and the Vizio Smart TVs. I was able to create a testing application with Kotlin for both
-                    web and desktop that tracked the performance of Vizio Account cloud services.
+                <p className="lead"> From June to August in 2022 I joined Vizio as a software engineering intern at their Seattle office.
+                    I joined the software team working on Vizio Account and other services for Vizio Smart TVs. I gained valuable experience working in an agile development
+                    environment and was able to learn about and contribute to the software development cycle. I also gained experience working on multiplatform applications
+                    using tools such the Kotlin Multiplatform framework, Postman, and JetBrains Compose.
+                    I was able to create a testing application with Kotlin for both web and desktop that tracked the performance of Vizio Account cloud services.
+
                 </p>
             </div>
 
@@ -128,21 +129,21 @@ export function Classes() {
         <>  <p>Classes I have taken at the University of Washington</p>
             <div className="row ">
                 <div className="col">
-                    {ClassCard("CSE 331 Software Design and Implementation", "Explores designing and programming in higher level languages. Focuses on proving code correctness and testing.")}
+                    {ClassCard("CSE 331 Software Design and Implementation", "Explores designing and programming in higher level languages. Focuses on proving code correctness and testing")}
                 </div>
                 <div className="col">
                     {ClassCard("CSE 373 Data Structures and Algorithms", "Teaches fundamental algorithms and data structures in Java")}
                 </div>
                 <div className="col">
-                    {ClassCard("CSE 351 The Hardware/Software Interface", "Explores machine architecture and introduces C, assembly, and memory management")}
+                    {ClassCard("CSE 351 The Hardware/Software Interface", "Explores machine architecture, C, assembly, and memory management")}
                 </div>
             </div>
             <div className="row p-5">
                 <div className="col">
-                    {ClassCard("CSE 414 Introduction to Database Systems ", "Explores Database Management Systems focusing on SQL and relational databases")}
+                    {ClassCard("CSE 414 Introduction to Database Systems ", "Explores database management systems focusing on SQL and relational databases")}
                 </div>
                 <div className="col">
-                    {ClassCard("CSE 163 Intermediate Data Programming", "Teaches how to use the various tools available in Python to analyze, manipulate and visualize Data")}
+                    {ClassCard("CSE 163 Intermediate Data Programming", "Teaches how to use the various tools available in Python to analyze, manipulate and visualize data")}
                 </div>
                 <div className="col">
                     {ClassCard("AMATH 481 Scientific Computing", "Explores implementing numerical differential equation solvers in Python and MatLab")}
