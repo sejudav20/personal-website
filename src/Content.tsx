@@ -180,15 +180,30 @@ export function Projects() {
     return (
         <><ProjectCard iconPath="./news_hawk.png" title="News Hawk" details="An android app created using Flutter that utilizes a 
         REST API created with Spring Boot. The app allows users to create multimedia news articles and explore other people's work as well.
-        The app extensively uses AWS services such as Elastic Beanstalk to host the backend and DynamoDB to store user data." />
+        The app extensively uses AWS services such as Elastic Beanstalk to host the backend and DynamoDB to store user data." 
+        links={<>
+             
+                <a href='https://github.com/sejudav20/NewsHawk-Backend'><i className="bi bi-github links-icon pe-4"/></a>
+              
+                <a href='https://play.google.com/store/apps/details?id=com.NewsHawk.project_novus'><i className="bi bi-google-play links-icon"/></a>
+               
+           </>}/>
             <ProjectCard iconPath="./music-note-beamed.svg" title="Music Key Recognition" details="A simple web application that recognizes the musical key 
             of a song. The website allows users to submit tunes through spotify urls, files and recording. It was created with Python using
-            Django. The website uses a neural network I trained using 20,000 spotify songs compiled with the Spotify API to recognize the key" />
+            Django. The website uses a neural network I trained using 20,000 spotify songs compiled with the Spotify API to recognize the key" 
+            links={<>
+            <a href='https://github.com/sejudav20/Music-Key-Recognization-Website'><i className="bi bi-github links-icon pe-4"/></a>
+            {/* <a href='https://play.google.com/store/apps/details?id=com.NewsHawk.project_novus'><i className="bi bi-globe links-icon"/></a> */}
+            </>}/>
             <ProjectCard iconPath="./geo-alt.svg" title="Campus Paths" details="A website created for a school project that utilizes backend spark Java server
             and a front end made with React and TypeScript. The website allows users to select buildings around University of Washington campus and finds the shortest path
-            between them using Dijkstra's algorithm." />
+            between them using Dijkstra's algorithm."
+            links={<>
+            {/* <a href='https://github.com/sejudav20/NewsHawk-Backend'><i className="bi bi-globe links-icon"/></a> */}
+            </>} />
             <ProjectCard iconPath="./camera.svg" title="Memer" details=" A simple Android App that uses a convolutional neural network I trained on hundreds of images
-            to detect if an image could be a considered an internet meme." /></>
+            to detect if an image could be a considered an internet meme." 
+            links={<><a href='https://play.google.com/store/apps/details?id=com.SpartanSoftTech.memerecognition'><i className="bi bi-google-play links-icon"/></a></>}/></>
     )
 }
 
@@ -197,23 +212,28 @@ interface ProjectProp {
     iconPath: string
     title: string
     details: string
+    links: any
 }
 
 
-function ProjectCard({ iconPath, title, details }: ProjectProp) {
+function ProjectCard({ iconPath, title, details,links }: ProjectProp) {
     return (<>
-        <div className="card">
+        <div className="card mb-5">
             <div className="row">
                 <div className="col-sm-2 border-end d-flex justify-content-center">
                     <center><img src={iconPath} alt="App icon" width="80" height="80" /></center>
 
                 </div>
-                <div className="col-sm-10 d-flex flex-column justify-content-start  ">
+                <div className="col-sm-7 d-flex flex-column justify-content-start  ">
                     <div className="h5">{title}</div>
                     <p>{details}</p>
                 </div>
+                <div className="col-sm-3 border-start d-flex flex-row justify-content-center align-items-center  ">
+                   {links}
+                  
+                </div>
             </div>
         </div>
-    </>)
+    </>);
 }
 
